@@ -32,15 +32,15 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.Escape))
-     {
-         panelUI.SetActive(true);
-     }
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            panelUI.SetActive(true);
+        }
     }
 
     void cargaDatos ()
     {
-        GameObject.Find("T_titulo").GetComponent<Text>().text = misDatos.nombre_juego;
+        //GameObject.Find("T_titulo").GetComponent<Text>().text = misDatos.nombre_juego;
         T_Titulo.text = misDatos.nombre_juego;
         T_Jugador.text = misDatos.nombre_jugador;
     }
